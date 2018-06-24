@@ -26,6 +26,8 @@ f2 = interp1d(x, y, kind='cubic')
 
 N=20
 note_frequency = 100/60 #100 beats/minute
+note_frequency = 100.0/60 #100 beats/minute
+pdb.set_trace()
 note_time_period=1.0/note_frequency
 note_time_period_hold_instant=note_time_period/N
 freq_curve_sampling_rate=N*note_frequency
